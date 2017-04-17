@@ -76,7 +76,7 @@ class OpenChannelListAdapter extends RecyclerView.Adapter<OpenChannelListAdapter
 
     static class ChannelHolder extends RecyclerView.ViewHolder {
         // A list of colors for decorating each list item.
-        private String[] colorList = { "#ff2de3e1", "#ff35a3fb", "#ff805aff", "#ffcf47fb", "#ffe248c3" };
+        private String[] colorList = {"#ff2de3e1", "#ff35a3fb", "#ff805aff", "#ffcf47fb", "#ffe248c3"};
 
         TextView nameText, participantCountText;
         ImageView coloredDecorator;

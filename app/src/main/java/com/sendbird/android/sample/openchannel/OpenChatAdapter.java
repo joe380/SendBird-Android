@@ -2,7 +2,6 @@ package com.sendbird.android.sample.openchannel;
 
 
 import android.content.Context;
-import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -18,10 +17,10 @@ import com.sendbird.android.FileMessage;
 import com.sendbird.android.SendBird;
 import com.sendbird.android.User;
 import com.sendbird.android.UserMessage;
-import com.sendbird.android.sample.utils.FileUtils;
-import com.sendbird.android.sample.utils.ImageUtils;
 import com.sendbird.android.sample.R;
 import com.sendbird.android.sample.utils.DateUtils;
+import com.sendbird.android.sample.utils.FileUtils;
+import com.sendbird.android.sample.utils.ImageUtils;
 
 import java.util.ArrayList;
 import java.util.List;

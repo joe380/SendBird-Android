@@ -133,10 +133,10 @@ public class OpenChannelListFragment extends Fragment {
      * Creates a new query to get the list of the user's Open Channels,
      * then replaces the existing dataset.
      *
-     * @param numChannels   The number of channels to load.
+     * @param numChannels The number of channels to load.
      */
     void refreshChannelList(int numChannels) {
-        mChannelListQuery= OpenChannel.createOpenChannelListQuery();
+        mChannelListQuery = OpenChannel.createOpenChannelListQuery();
         mChannelListQuery.setLimit(numChannels);
         mChannelListQuery.next(new OpenChannelListQuery.OpenChannelListQueryResultHandler() {
             @Override

@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * A fragment displaying a list of selectable users.
  */
-public class SelectUserFragment extends Fragment{
+public class SelectUserFragment extends Fragment {
 
     private LinearLayoutManager mLayoutManager;
     private RecyclerView mRecyclerView;
@@ -115,7 +115,7 @@ public class SelectUserFragment extends Fragment{
 
     /**
      * Loads users and adds them to current user list.
-     *
+     * <p>
      * A PreviousMessageListQuery must have been already initialized through {@link #loadInitialUserList(int)}
      */
     private void loadNextUserList(int size) {

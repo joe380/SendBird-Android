@@ -26,7 +26,7 @@ import java.util.List;
  * current channel.
  */
 
-public class InviteMemberActivity extends AppCompatActivity{
+public class InviteMemberActivity extends AppCompatActivity {
 
     private LinearLayoutManager mLayoutManager;
     private RecyclerView mRecyclerView;
@@ -169,7 +169,7 @@ public class InviteMemberActivity extends AppCompatActivity{
 
     /**
      * Loads users and adds them to current user list.
-     *
+     * <p>
      * A PreviousMessageListQuery must have been already initialized through {@link #loadInitialUserList(int)}
      */
     private void loadNextUserList(int size) {

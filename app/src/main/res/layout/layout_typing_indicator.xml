@@ -9,7 +9,7 @@
         android:id="@+id/typing_indicator_dot_1"
         android:src="@drawable/typing_indicator_dot"
         android:layout_width="4dp"
-        android:layout_height="4dp"/>
+        android:layout_height="4dp" />
 
     <ImageView
         android:id="@+id/typing_indicator_dot_2"
@@ -17,7 +17,7 @@
         android:layout_width="4dp"
         android:layout_height="4dp"
         android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"/>
+        android:layout_marginRight="2dp" />
 
     <ImageView
         android:id="@+id/typing_indicator_dot_3"

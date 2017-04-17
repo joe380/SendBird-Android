@@ -9,10 +9,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.sendbird.android.sample.R;
-import com.sendbird.android.sample.openchannel.OpenChannelListFragment;
 
 
-public class GroupChannelActivity extends AppCompatActivity{
+public class GroupChannelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,7 +37,7 @@ public class GroupChannelActivity extends AppCompatActivity{
         }
 
         String channelUrl = getIntent().getStringExtra("groupChannelUrl");
-        if(channelUrl != null) {
+        if (channelUrl != null) {
             // If started from notification
             Fragment fragment = GroupChatFragment.newInstance(channelUrl);
             FragmentManager manager = getSupportFragmentManager();

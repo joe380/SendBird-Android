@@ -35,7 +35,7 @@ public class TextUtils {
                 count++;
                 names.append(", " + member.getNickname());
 
-                if(count >= 10) {
+                if (count >= 10) {
                     break;
                 }
             }
@@ -45,6 +45,7 @@ public class TextUtils {
 
     /**
      * Calculate MD5
+     *
      * @param data
      * @return
      * @throws NoSuchAlgorithmException

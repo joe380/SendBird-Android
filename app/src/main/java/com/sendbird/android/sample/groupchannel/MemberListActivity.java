@@ -17,7 +17,7 @@ import com.sendbird.android.sample.R;
 import java.util.List;
 
 
-public class MemberListActivity extends AppCompatActivity{
+public class MemberListActivity extends AppCompatActivity {
 
     private UserListAdapter mListAdapter;
     private RecyclerView mRecyclerView;

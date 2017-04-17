@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 package com.sendbird.android.sample.utils;
+
 import android.app.Activity;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -47,7 +48,6 @@ public class MediaPlayerActivity extends Activity implements
     private ProgressBar mProgressBar;
 
     /**
-     *
      * Called when the activity is first created.
      */
     @Override
@@ -64,6 +64,7 @@ public class MediaPlayerActivity extends Activity implements
 
         mProgressBar.setVisibility(View.VISIBLE);
     }
+
     private void playVideo(Integer Media) {
         doCleanUp();
         try {
@@ -81,12 +82,15 @@ public class MediaPlayerActivity extends Activity implements
             Log.e(TAG, "error: " + e.getMessage(), e);
         }
     }
+
     public void onBufferingUpdate(MediaPlayer arg0, int percent) {
         Log.d(TAG, "onBufferingUpdate percent:" + percent);
     }
+
     public void onCompletion(MediaPlayer arg0) {
         Log.d(TAG, "onCompletion called");
     }
+
     public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
         Log.v(TAG, "onVideoSizeChanged called");
         if (width == 0 || height == 0) {
@@ -100,6 +104,7 @@ public class MediaPlayerActivity extends Activity implements
             startVideoPlayback();
         }
     }
+
     public void onPrepared(MediaPlayer mediaplayer) {
         Log.d(TAG, "onPrepared called");
         mIsVideoReadyToBePlayed = true;
@@ -107,40 +112,48 @@ public class MediaPlayerActivity extends Activity implements
             startVideoPlayback();
         }
     }
+
     public void surfaceChanged(SurfaceHolder surfaceholder, int i, int j, int k) {
         Log.d(TAG, "surfaceChanged called");
     }
+
     public void surfaceDestroyed(SurfaceHolder surfaceholder) {
         Log.d(TAG, "surfaceDestroyed called");
     }
+
     public void surfaceCreated(SurfaceHolder holder) {
         Log.d(TAG, "surfaceCreated called");
         playVideo(extras.getInt(MEDIA));
     }
+
     @Override
     protected void onPause() {
         super.onPause();
         releaseMediaPlayer();
         doCleanUp();
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
         releaseMediaPlayer();
         doCleanUp();
     }
+
     private void releaseMediaPlayer() {
         if (mMediaPlayer != null) {
             mMediaPlayer.release();
             mMediaPlayer = null;
         }
     }
+
     private void doCleanUp() {
         mVideoWidth = 0;
         mVideoHeight = 0;
         mIsVideoReadyToBePlayed = false;
         mIsVideoSizeKnown = false;
     }
+
     private void startVideoPlayback() {
         Log.v(TAG, "startVideoPlayback");
         holder.setFixedSize(mVideoWidth, mVideoHeight);

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layout_group_chat_root"
     android:layout_width="match_parent"
@@ -23,7 +22,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:contentDescription="Upload file"
-            android:layout_gravity="bottom"/>
+            android:layout_gravity="bottom" />
 
         <EditText
             android:id="@+id/edittext_group_chat_message"
@@ -34,7 +33,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:maxLines="6"/>
+            android:maxLines="6" />
 
         <Button
             android:id="@+id/button_group_chat_send"
@@ -53,7 +52,7 @@
         android:layout_above="@id/layout_group_chat_chatbox"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#DfDfDf"/>
+        android:background="#DfDfDf" />
 
     <LinearLayout
         android:layout_above="@id/layout_group_chat_chatbox"
@@ -85,7 +84,7 @@
                 android:text="Terry and Harry are typing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical" />
 
         </LinearLayout>
 

@@ -15,7 +15,7 @@ import com.sendbird.android.sample.R;
 /**
  * A fragment displaying an option to set the channel as Distinct.
  */
-public class SelectDistinctFragment extends Fragment{
+public class SelectDistinctFragment extends Fragment {
 
     private CheckBox mCheckBox;
     private DistinctSelectedListener mListener;

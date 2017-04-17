@@ -71,15 +71,16 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        if(PreferenceUtils.getConnected(this)) {
+        if (PreferenceUtils.getConnected(this)) {
             connectToSendBird(PreferenceUtils.getUserId(this), PreferenceUtils.getNickname(this));
         }
     }
 
     /**
      * Attempts to connect a user to SendBird.
-     * @param userId    The unique ID of the user.
-     * @param userNickname  The user's nickname, which will be displayed in chats.
+     *
+     * @param userId       The unique ID of the user.
+     * @param userNickname The user's nickname, which will be displayed in chats.
      */
     private void connectToSendBird(final String userId, final String userNickname) {
         // Show the loading indicator
@@ -142,7 +143,8 @@ public class LoginActivity extends AppCompatActivity {
 
     /**
      * Updates the user's nickname.
-     * @param userNickname  The new nickname of the user.
+     *
+     * @param userNickname The new nickname of the user.
      */
     private void updateCurrentUserInfo(String userNickname) {
         SendBird.updateCurrentUserInfo(userNickname, null, new SendBird.UserInfoUpdateHandler() {

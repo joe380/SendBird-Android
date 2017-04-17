@@ -41,7 +41,7 @@
         android:textColor="#3a414d"
         android:layout_toRightOf="@id/image_open_chat_profile"
         android:layout_below="@id/text_open_chat_date"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/text_open_chat_message"
@@ -63,7 +63,7 @@
         android:layout_marginLeft="8dp"
         android:layout_alignBaseline="@id/text_open_chat_nickname"
         android:textSize="10sp"
-        android:textColor="#bebed1"/>
+        android:textColor="#bebed1" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
             android:id="@+id/image_open_chat_file_thumbnail"
             android:layout_width="68dp"
             android:layout_height="68dp"
-            android:src="@drawable/login_logo"/>
+            android:src="@drawable/login_logo" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
                 android:text="IMG_20140623_142311.jpg"
                 android:textColor="#000000"
                 android:layout_marginRight="16dp"
-                android:layout_marginBottom="4dp"/>
+                android:layout_marginBottom="4dp" />
 
             <TextView
                 android:id="@+id/text_open_chat_file_size"
@@ -109,7 +109,6 @@
 
 
         </LinearLayout>
-
 
 
     </LinearLayout>

@@ -10,6 +10,7 @@ import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
 import com.sendbird.android.OpenChannel;
 import com.sendbird.android.SendBirdException;
 import com.sendbird.android.sample.R;

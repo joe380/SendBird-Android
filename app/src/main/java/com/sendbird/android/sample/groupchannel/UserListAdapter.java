@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sendbird.android.User;
-import com.sendbird.android.sample.utils.ImageUtils;
 import com.sendbird.android.sample.R;
+import com.sendbird.android.sample.utils.ImageUtils;
 
 import java.util.ArrayList;
 import java.util.List;

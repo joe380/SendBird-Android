@@ -34,7 +34,7 @@ import java.util.List;
 /**
  * Displays a list of Group Channels within a SendBird application.
  */
-class GroupChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+class GroupChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private List<GroupChannel> mChannelList;
     private Context mContext;
@@ -63,16 +63,16 @@ class GroupChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             File dataFile = new File(appDir, TextUtils.generateMD5(SendBird.getCurrentUser().getUserId() + "channel_list") + ".data");
 
             String content = FileUtils.loadFromFile(dataFile);
-            String [] dataArray = content.split("\n");
+            String[] dataArray = content.split("\n");
 
             // Reset channel list, then add cached data.
             mChannelList.clear();
-            for(int i = 0; i < dataArray.length; i++) {
+            for (int i = 0; i < dataArray.length; i++) {
                 mChannelList.add((GroupChannel) BaseChannel.buildFromSerializedData(Base64.decode(dataArray[i], Base64.DEFAULT | Base64.NO_WRAP)));
             }
 
             notifyDataSetChanged();
-        } catch(Exception e) {
+        } catch (Exception e) {
             // Nothing to load.
         }
     }
@@ -104,17 +104,17 @@ class GroupChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                 try {
                     String content = FileUtils.loadFromFile(hashFile);
                     // If data has not been changed, do not save.
-                    if(md5.equals(content)) {
+                    if (md5.equals(content)) {
                         return;
                     }
-                } catch(IOException e) {
+                } catch (IOException e) {
                     // File not found. Save the data.
                 }
 
                 FileUtils.saveToFile(dataFile, data);
                 FileUtils.saveToFile(hashFile, md5);
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -202,9 +202,10 @@ class GroupChannelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
 
         /**
          * Binds views in the ViewHolder to information contained within the Group Channel.
+         *
          * @param context
          * @param channel
-         * @param clickListener A listener that handles simple clicks.
+         * @param clickListener     A listener that handles simple clicks.
          * @param longClickListener A listener that handles long clicks.
          */
         void bind(final Context context, final GroupChannel channel,

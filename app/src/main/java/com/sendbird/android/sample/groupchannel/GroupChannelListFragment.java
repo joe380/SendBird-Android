@@ -17,7 +17,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.sendbird.android.*;
+import com.sendbird.android.BaseChannel;
+import com.sendbird.android.BaseMessage;
+import com.sendbird.android.GroupChannel;
+import com.sendbird.android.GroupChannelListQuery;
+import com.sendbird.android.SendBird;
+import com.sendbird.android.SendBirdException;
 import com.sendbird.android.sample.R;
 
 import java.util.List;
@@ -220,8 +225,9 @@ public class GroupChannelListFragment extends Fragment {
 
     /**
      * Turns push notifications on or off for a selected channel.
-     * @param channel   The channel for which push preferences should be changed.
-     * @param on    Whether to set push notifications on or off.
+     *
+     * @param channel The channel for which push preferences should be changed.
+     * @param on      Whether to set push notifications on or off.
      */
     private void setChannelPushPreferences(final GroupChannel channel, final boolean on) {
         // Change push preferences.

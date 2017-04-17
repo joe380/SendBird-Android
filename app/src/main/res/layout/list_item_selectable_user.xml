@@ -12,7 +12,7 @@
         android:layout_height="48dp"
         android:gravity="center"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true" />
 
     <ImageView
         android:id="@+id/image_selectable_user_list_profile"
@@ -21,7 +21,7 @@
         android:layout_height="36dp"
         android:layout_toRightOf="@id/checkbox_selectable_user_list"
         android:layout_marginRight="16dp"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true" />
 
     <TextView
         android:id="@+id/text_selectable_user_list_nickname"
@@ -29,6 +29,6 @@
         android:layout_toRightOf="@id/image_selectable_user_list_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true" />
 
 </RelativeLayout>

@@ -32,7 +32,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:text="Daniel Silberschatz"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/image_group_chat_profile"
         android:layout_alignTop="@id/image_group_chat_profile"
-        android:layout_marginBottom="4dp"/>
+        android:layout_marginBottom="4dp" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_group_chat_message"
@@ -61,7 +61,7 @@
             android:id="@+id/group_chat_message_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/text_group_chat_message"
@@ -74,16 +74,15 @@
                 android:textColor="@color/groupChatTextOther"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxWidth="260dp"
-                />
+                android:maxWidth="260dp" />
 
 
             <LinearLayout
                 android:id="@+id/url_preview_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
                 <View
                     android:maxWidth="260dp"
                     android:layout_width="match_parent"
@@ -91,8 +90,8 @@
                     android:layout_marginLeft="12dp"
                     android:layout_marginRight="12dp"
                     android:background="@android:color/darker_gray"
-                    android:layout_marginBottom="8dp"
-                    />
+                    android:layout_marginBottom="8dp" />
+
                 <TextView
                     android:id="@+id/text_url_preview_site_name"
                     android:paddingLeft="12dp"
@@ -104,8 +103,8 @@
                     android:textColor="@color/groupChatTextOther"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxWidth="260dp"
-                    />
+                    android:maxWidth="260dp" />
+
                 <TextView
                     android:id="@+id/text_url_preview_title"
                     android:paddingLeft="12dp"
@@ -117,8 +116,8 @@
                     android:textColor="@color/groupChatTextOther"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxWidth="260dp"
-                    />
+                    android:maxWidth="260dp" />
+
                 <TextView
                     android:id="@+id/text_url_preview_description"
                     android:paddingLeft="12dp"
@@ -131,15 +130,14 @@
                     android:textColor="@color/groupChatTextOther"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxWidth="260dp"
-                    />
+                    android:maxWidth="260dp" />
+
                 <ImageView
                     android:id="@+id/image_url_preview_main"
                     android:layout_width="match_parent"
                     android:layout_height="148dp"
                     android:scaleType="centerCrop"
-                    android:adjustViewBounds="true"
-                    />
+                    android:adjustViewBounds="true" />
 
             </LinearLayout>
         </LinearLayout>
@@ -155,8 +153,7 @@
         android:layout_alignBottom="@id/card_group_chat_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        />
+        android:layout_marginBottom="4dp" />
 
     <TextView
         android:id="@+id/text_group_chat_read_receipt"

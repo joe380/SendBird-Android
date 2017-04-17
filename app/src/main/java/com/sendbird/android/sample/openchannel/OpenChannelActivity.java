@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 import com.sendbird.android.sample.R;
 
-public class OpenChannelActivity extends AppCompatActivity{
+public class OpenChannelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

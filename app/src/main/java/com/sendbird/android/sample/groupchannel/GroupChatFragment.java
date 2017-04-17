@@ -19,11 +19,37 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.*;
-import android.widget.*;
-import com.sendbird.android.*;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.sendbird.android.BaseChannel;
+import com.sendbird.android.BaseMessage;
+import com.sendbird.android.FileMessage;
+import com.sendbird.android.GroupChannel;
+import com.sendbird.android.PreviousMessageListQuery;
+import com.sendbird.android.SendBird;
+import com.sendbird.android.SendBirdException;
+import com.sendbird.android.User;
+import com.sendbird.android.UserMessage;
 import com.sendbird.android.sample.R;
-import com.sendbird.android.sample.utils.*;
+import com.sendbird.android.sample.utils.FileUtils;
+import com.sendbird.android.sample.utils.MediaPlayerActivity;
+import com.sendbird.android.sample.utils.PhotoViewerActivity;
+import com.sendbird.android.sample.utils.PreferenceUtils;
+import com.sendbird.android.sample.utils.TextUtils;
+import com.sendbird.android.sample.utils.UrlPreviewInfo;
+import com.sendbird.android.sample.utils.WebUtils;
+
 import org.json.JSONException;
 
 import java.io.File;
@@ -539,7 +565,7 @@ public class GroupChatFragment extends Fragment {
     private void updateActionBarTitle() {
         String title = "";
 
-        if(mChannel != null) {
+        if (mChannel != null) {
             title = TextUtils.getGroupChannelTitle(mChannel);
         }
 

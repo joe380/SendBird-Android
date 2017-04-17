@@ -42,7 +42,7 @@
         android:textColor="@color/openChatNicknameOther"
         android:layout_toRightOf="@id/image_open_chat_profile"
         android:layout_below="@id/text_open_chat_date"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/text_open_chat_message"
@@ -64,6 +64,6 @@
         android:layout_marginLeft="8dp"
         android:layout_alignBaseline="@id/text_open_chat_nickname"
         android:textSize="10sp"
-        android:textColor="#bebed1"/>
+        android:textColor="#bebed1" />
 
 </RelativeLayout>

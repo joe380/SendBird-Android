@@ -4,11 +4,12 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
-import android.util.Log;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
 
@@ -49,7 +50,7 @@ public class ImageUtils {
      * Displays an image from a URL in an ImageView.
      */
     public static void displayImageFromUrl(final Context context, final String url,
-                                           final ImageView imageView, RequestListener listener) {
+                                           final ImageView imageView, RequestListener<String, GlideDrawable> listener) {
         if (listener != null) {
             Glide.with(context)
                     .load(url)
@@ -84,7 +85,7 @@ public class ImageUtils {
     /**
      * Displays an image from a URL in an ImageView.
      */
-    public static void displayGifImageFromUrl(Context context, String url, ImageView imageView, RequestListener listener) {
+    public static void displayGifImageFromUrl(Context context, String url, ImageView imageView, RequestListener<String, GifDrawable> listener) {
         if (listener != null) {
             Glide.with(context)
                     .load(url)

@@ -109,7 +109,7 @@ public class CreateGroupChannelActivity extends AppCompatActivity
             mCurrentState = STATE_SELECT_USERS;
             mCreateButton.setVisibility(View.GONE);
             mNextButton.setVisibility(View.VISIBLE);
-        } else if (state == STATE_SELECT_DISTINCT){
+        } else if (state == STATE_SELECT_DISTINCT) {
             mCurrentState = STATE_SELECT_DISTINCT;
             mCreateButton.setVisibility(View.VISIBLE);
             mNextButton.setVisibility(View.GONE);
@@ -138,15 +138,15 @@ public class CreateGroupChannelActivity extends AppCompatActivity
 
     /**
      * Creates a new Group Channel.
-     *
+     * <p>
      * Note that if you have not included empty channels in your GroupChannelListQuery,
      * the channel will not be shown in the user's channel list until at least one message
      * has been sent inside.
      *
-     * @param userIds   The users to be members of the new channel.
-     * @param distinct  Whether the channel is unique for the selected members.
-     *                  If you attempt to create another Distinct channel with the same members,
-     *                  the existing channel instance will be returned.
+     * @param userIds  The users to be members of the new channel.
+     * @param distinct Whether the channel is unique for the selected members.
+     *                 If you attempt to create another Distinct channel with the same members,
+     *                 the existing channel instance will be returned.
      */
     private void createGroupChannel(List<String> userIds, boolean distinct) {
         GroupChannel.createChannelWithUserIds(userIds, distinct, new GroupChannel.GroupChannelCreateHandler() {
